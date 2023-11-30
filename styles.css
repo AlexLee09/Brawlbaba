@@ -1,0 +1,127 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #00a5f9;
+}
+
+h1 
+{ 
+    text-align: center;
+    font-size: 70px
+}
+h2{
+    font-size: 50px;
+}
+
+#columns
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#leftColumn
+{
+    background-color: rgb(228, 184, 184);
+    width: 70%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#rightColumn
+{
+    background-color: rgb(192, 192, 230);
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#navContainer
+{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 60px;
+}
+
+#conventionalStats
+{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#mostPlayedtext
+{
+    font-size: 30px;
+
+}
+#leastPlayedtext
+{
+    font-size: 30px;
+
+}
+#highestWinRatetext
+{
+    font-size: 30px;
+
+}
+#lowestWinRatetext
+{
+    font-size: 30px;
+
+}
+
+#mostPlayed
+{
+    display: flex;
+    gap: 200px;
+    background-color: bisque;
+    padding-left: 20px;
+    padding-right: 20px
+
+}
+
+#leastPlayed
+{
+    display: flex;
+    gap: 200px;
+    background-color: bisque;
+    padding-left: 20px;
+    padding-right: 20px
+
+}
+
+#highestWinrate
+{
+    display: flex;
+    gap: 200px;
+    background-color: bisque;
+    padding-left: 20px;
+    padding-right: 20px
+
+}
+
+#lowestWinrate
+{
+    display: flex;
+    gap: 200px;
+    background-color: bisque;
+    padding-left: 20px;
+    padding-right: 20px
+
+}
+
+.brawlerCategory
+{
+    text-align: center;
+}
