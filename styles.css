@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
+
 body
 {
     margin: 0;
     padding: 0;
     background-color: #00a5f9;
+    font-family: 'Hedvig Letters Sans', sans-serif;
 }
 
 h1 
@@ -24,12 +27,13 @@ h2{
 
 #leftColumn
 {
-    background-color: rgb(228, 184, 184);
+    background-color: #3aafa9;
     width: 70%;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
+    overflow: auto;
 }
 
 #rightColumn
@@ -81,43 +85,59 @@ h2{
 
 }
 
+#simpleBrawlers
+{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 #mostPlayed
 {
     display: flex;
-    gap: 200px;
+    justify-content: space-between;
+    width: 80%;
     background-color: bisque;
     padding-left: 20px;
-    padding-right: 20px
+    padding-right: 20px;
+
 
 }
 
 #leastPlayed
 {
     display: flex;
-    gap: 200px;
+    justify-content: space-between;
+    width: 80%;
     background-color: bisque;
     padding-left: 20px;
-    padding-right: 20px
+    padding-right: 20px;
+
 
 }
 
 #highestWinrate
 {
     display: flex;
-    gap: 200px;
+    justify-content: space-between;
+    width: 80%;
     background-color: bisque;
     padding-left: 20px;
-    padding-right: 20px
+    padding-right: 20px;
+
 
 }
 
 #lowestWinrate
 {
     display: flex;
-    gap: 200px;
+    justify-content: space-between;
+    width: 80%;
     background-color: bisque;
     padding-left: 20px;
-    padding-right: 20px
+    padding-right: 20px;
+
 
 }
 
