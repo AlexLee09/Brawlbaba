@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
 
+:root {
+    --bg-color: #1e1e1e;
+    --main-color: #007acc;
+    --caret-color: #569cd6;
+    --sub-color: #4d4d4d;
+    --sub-alt-color: #191919;
+    --text-color: #d4d4d4;
+    --error-color: #f44747;
+    --error-extra-color: #f44747;
+    --colorful-error-color: #f44747;
+    --colorful-error-extra-color: #f44747;
+}
+
 body
 {
     margin: 0;
     padding: 0;
-    background-color: #00a5f9;
+    background-color: var(--main-color); 
     font-family: 'Hedvig Letters Sans', sans-serif;
+    color: var(--text-color);
 }
 
 h1 
@@ -15,6 +29,11 @@ h1
 }
 h2{
     font-size: 50px;
+    color: var(--sub-color);
+}
+
+h3{
+    font-size: 30px;
 }
 
 #columns
@@ -27,23 +46,44 @@ h2{
 
 #leftColumn
 {
-    background-color: #3aafa9;
-    width: 70%;
+    background-color: var(--bg-color);
+    flex: 2;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
     overflow: auto;
+    border: 5px solid var(--sub-alt-color);
+    box-sizing: border-box;
 }
 
 #rightColumn
 {
-    background-color: rgb(192, 192, 230);
-    width: 30%;
+    background-color: var(--bg-color);
+    flex: 0.1;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
+    border: 5px solid var(--sub-alt-color);
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+#rightColumn:hover
+{
+    flex: 1;
+
+}
+
+#brawlCoachContent
+{
+    visibility: hidden;
+}
+
+#rightColumn:hover #brawlCoachContent
+{
+    visibility: visible;
 }
 
 #navContainer
@@ -59,30 +99,32 @@ h2{
 
 #conventionalStats
 {
+    gap: 40px; 
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    width: 90%;
+    justify-content: center;
+   
 }
 
-#mostPlayedtext
+.conventionalStatBox
 {
-    font-size: 30px;
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
 
 }
-#leastPlayedtext
-{
-    font-size: 30px;
 
-}
-#highestWinRatetext
+.conventionalStatBox div
 {
-    font-size: 30px;
-
-}
-#lowestWinRatetext
-{
-    font-size: 30px;
-
+    background-color: var(--sub-alt-color); 
+    border-radius: 10px;
+    height: 120px; 
+    width: 100%;
+    padding-left: 20px;
+    
 }
 
 #simpleBrawlers
@@ -93,52 +135,13 @@ h2{
     flex-direction: column;
 }
 
-#mostPlayed
+.brawlerGroup
 {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    background-color: bisque;
     padding-left: 20px;
     padding-right: 20px;
-
-
-}
-
-#leastPlayed
-{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    background-color: bisque;
-    padding-left: 20px;
-    padding-right: 20px;
-
-
-}
-
-#highestWinrate
-{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    background-color: bisque;
-    padding-left: 20px;
-    padding-right: 20px;
-
-
-}
-
-#lowestWinrate
-{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    background-color: bisque;
-    padding-left: 20px;
-    padding-right: 20px;
-
-
 }
 
 .brawlerCategory
