@@ -20,6 +20,7 @@ body
     background-color: var(--main-color); 
     font-family: 'Hedvig Letters Sans', sans-serif;
     color: var(--text-color);
+    overflow-y: hidden;
 }
 
 h1 
