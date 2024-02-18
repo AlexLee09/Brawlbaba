@@ -9,11 +9,11 @@
     </head>
     <body>
         <div id="navContainer">
-            <h3>Username: Larry</h3>
+            <h3 id = "userName">Username: ----------</h3>
             <h1>Brawlbaba</h1>
             <input id ="ID" type = "text" placeholder = "Brawl ID">
             <button type = "button" onclick="searchBrawl()">Generate Stats</button>
-            <h3>Code: #JUR28YJ</h3>
+            <h3 id = playerId>Code: #-------</h3>
         </div>
         <div id="columns">
             <div id="leftColumn">
@@ -21,69 +21,81 @@
                 <div id="conventionalStats">
                     <div class="conventionalStatBox">
                         <div>
-                            <h3>Trophies: 20000</h3>
+                            <h3 id = "trophies">Trophies: 20000</h3>
                         </div>
                         <div>
-                            <h3>Best Trophies: 20500</h3>
-                        </div>
-                    </div>
-                    <div class="conventionalStatBox">
-                        <div>
-                            <h3>Best Power league: Mythic II</h3>
-                        </div>
-                        <div>
-                            <h3>Total Wins: 11000</h3>
+                            <h3 id = bestTrophies>Best Trophies: 20500</h3>
                         </div>
                     </div>
                     <div class="conventionalStatBox">
                         <div>
-                            <h3>Recent Win Percentage: 50%</h3>
+                            <h3 id = "teamWins">3v3 Wins: 10000</h3>
                         </div>
                         <div>
-                            <h3>Club: THEGOATSSS</h3>
+                            <h3 id = showdownWins>Showdown Wins: 11000</h3>
+                        </div>
+                    </div>
+                    <div class="conventionalStatBox">
+                        <div>
+                            <h3 id="expLevel">Experience Level: 50</h3>
+                        </div>
+                        <div>
+                            <h3 id = "club">Club: THEGOATSSS</h3>
                         </div>
                     </div>
                 </div>
-                <h2>Brawlers</h2>
+                <h2>Recent Stats (last 25 games)</h2>
                 <div id = "simpleBrawlers">        
-                    <h3>Most Played</h3>
+                    <h3>Most Played Brawler</h3>
                     <div class = "brawlerGroup">
-                        <h4 >Shelly</h4>
-                        <h4 >Nita</h4>
-                        <h4 >Rosa</h4>
-                        <h4 >Pam</h4>
-                        <h4 >Edgar</h4>
+                        <!-- <h4 >Shelly</h4>
+                        <h4 >Nita</h4> -->
+                        <h4 id = "mostPlayedBrawler">Rosa</h4>
+                        <!-- <h4 >Pam</h4>
+                        <h4 >Edgar</h4> -->
                     </div>
-                    <h3>Least Played</h3>
+                    <h3>Most Played Mode</h3>
                     <div class = "brawlerGroup">
-                        <h4 >Colt</h4>
-                        <h4 >Colette</h4>
+                        <h4 id = mostPlayedMode>Duo Showdown</h4>
+                        <!-- <h4 >Colette</h4>
                         <h4 >Cordelius</h4>
                         <h4 >Willow</h4>
-                        <h4 >Crow</h4>
+                        <h4 >Crow</h4> -->
                     </div>
-                    <h3>Highest Win Rate</h3>
+                    <h3>Win Percentage</h3>
                     <div class = "brawlerGroup">
-                        <h4 >Spike</h4>
-                        <h4 >Nita</h4>
+                        <h4 id = "winPercentage">44</h4>
+                        <!-- <h4 >Nita</h4>
                         <h4 >Shelly</h4>
                         <h4 >Edgar</h4>
-                        <h4 >RT</h4>
+                        <h4 >RT</h4> -->
                     </div>
-                    <h3>Lowest Win Rate</h3>
+                    <h3>Star Player Percentage</h3>
                     <div class = "brawlerGroup">
-                        <h4 >Frank</h4>
-                        <h4 >Bull</h4>
+                        <h4 id = starPlayerPercentage>5</h4>
+                        <!-- <h4 >Bull</h4>
                         <h4 >Gus</h4>
                         <h4 >Lou</h4>
-                        <h4 >Jacky</h4>
+                        <h4 >Jacky</h4> -->
                     </div>
-               
-              
 
-                </div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     
-
+                    <div>
+                        <canvas id="myChart"></canvas>
+                        <canvas id = "mySecondChart"></canvas>
+                    </div>
+                    
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
             </div>
             <div id="rightColumn">
                 <h2>Brawl Coach</h2>
@@ -99,5 +111,6 @@
         <img src=“https://media.giphy.com/media/kdOxBYGik4DZLDp0Tf/giphy.gif”/>
 
         <script src="script.js"></script>   
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </body>
 </html>
